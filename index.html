@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/reset.css">
     <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="icon" href="/assets/images/icon.png">
     <title>Architect</title>
 </head>
 <body>
@@ -59,7 +60,7 @@
                 <div class="name">Renovated</div>
             </article>
         </section>
-        <section>
+        <section class="about">
             <h2>About</h2>
             <p class="info">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci maxime laudantium eius, deleniti inventore officia molestiae asperiores aliquam totam eaque quibusdam maiores! Blanditiis beatae velit voluptates nihil sapiente at? Provident quisquam doloremque architecto, illum molestiae enim quidem mollitia modi fugit? Quos nam voluptatum odit delectus libero unde expedita impedit a pariatur laborum inventore explicabo excepturi, fuga aspernatur eaque similique minus error. Cumque, in! Iste dolor doloremque cumque incidunt nihil modi?
@@ -93,10 +94,33 @@
                     <p class="user-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, molestias provident!</p>
                     <button class="btn-user">Contact</button>
                 </article>
-               
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Contact</h2>
+            <div class="contact-forms">
+                <form action="Get-name">
+                    <input type="text" name="Name" placeholder="Name">
+                </form>
+                <form action="Get-lastName">
+                    <input type="text" name="LastName" placeholder="Last name">
+                </form>
+                <form action="Get-email">
+                    <input type="email" name="Email" placeholder="Email">
+                </form>
+                <form action="Get-comment">
+                    <textarea name="Comment" id="comment" placeholder="Comment"></textarea>
+                </form>
+            </div>
+            <button class="contact-btn">SEND MESSAGE</button>
+            <div class="image-wrapper">
+                <img src="/assets/images/map.jpg" alt="map">
             </div>
         </section>
     </main>
+    <footer>
+        <a href="#" class="footer-link">By Maksym Gospodynko</a>
+    </footer>
 
 </body>
 </html>
