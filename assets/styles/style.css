@@ -2,9 +2,16 @@
     box-sizing: border-box;
 }
 
+html {
+    --text-size: 1.1rem;
+    --hover-color: rgba(151, 144, 144, 0.5);
+}
+
 body {
     font-family: sans-serif;
 }
+
+/* Стилізація меню навігації */
 
 .main-nav {
     display: flex;
@@ -31,22 +38,24 @@ body {
 
 .menu-item:hover {
     cursor: pointer;
-    background-color: rgba(151, 144, 144, 0.5);
+    background-color: var(--hover-color);
 }
 
-.logo {
+.first-logo {
     margin-right: auto;
     padding: 12px;
 }
 
-.logo:hover {
-    background-color: rgba(151, 144, 144, 0.5);
+.first-logo:hover {
+    background-color: var(--hover-color);
     cursor: pointer;
 }
 
-.first-logo {
+.two-letter-1 {
     font-weight: 900;
 }
+
+/* Стилізація шапки сайту */
 
 header {
     display: flex;
@@ -64,39 +73,51 @@ h1 {
     top: 30px;
 }
 
-.main-logo {
+.second-logo {
     font-size: 2.5rem;
     color: white;
     letter-spacing: 0.2rem;
 }
 
-.second-logo {
+.two-letter-2 {
     background-color: rgba(0, 0, 0, 0.75);
     padding: 12px 15px;
     color: rgba(255, 255, 255, 0.75);
     font-weight: 700;
 }
 
+/* Стилізація головної частини контенту */
+
 h2 {
     font-size: 1.4rem;
-    margin: 50px 30px;
+    margin: 20px 30px;
+    padding: 30px 0px;
+    box-shadow: 0 1px 0.2px rgb(220, 217, 217);
 }
+
+/* --- Стилізація першої частини --- */
 
 .house {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
     padding: 0px 20px;
-    
 }
 
 .project {
     position: relative;
+    overflow: hidden;
+}
+
+.project>img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .project>img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease;
 }
 
 .name {
@@ -105,5 +126,61 @@ h2 {
     left: 0px;
     padding: 10px;
     background-color: rgba(37, 37, 37, 0.8);
+    color: rgb(255, 255, 255);
+}
+
+/* --- Стилізація другої частини --- */
+
+.info {
+    font-size: var(--text-size);
+    margin: 0 20px;
+    line-height: 1.7rem;
+}
+
+.users {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+    margin: 50px 30px;
+}
+
+.user-card {
+    box-shadow: 2px 2px 3px grey;
+}
+
+.user-card>img {
+    width: 100%;
+    height: auto;
+}
+
+h3 {
+    font-size: 1.5rem;
+    padding: 15px 10px;
+}
+
+.work {
+    font-size: var(--text-size);
+    color: rgb(144, 145, 146);
+    padding: 0px 10px;
+}
+
+.user-info {
+    font-size: var(--text-size);
+    line-height: 1.5rem;
+    padding: 15px 10px;
+}
+
+.btn-user {
+    width: 100%;
+    border: none;
+    font-size: var(--text-size);
+    color: rgb(0, 0, 0);
+    padding: 20px 0px;
+}
+
+.btn-user:hover {
+    cursor: pointer;
+    background-color: rgb(130, 130, 130);
     color: rgb(255, 255, 255);
 }
