@@ -64,6 +64,7 @@ header {
     height: 100vh;
     background-image: url("/assets/images/architect.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0 10px;
     background-size: cover;
 }
@@ -195,7 +196,7 @@ h3 {
 
 form {
     display: flex;
-    max-width: 70%;
+    max-width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -253,4 +254,56 @@ footer {
     font-size: var(--text-size);
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width: 400px) {
+   .main-menu {
+    display: none;
+    background-color: rgb(84, 80, 80);
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    border-radius: 20px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    overflow: hidden;
+   }
+
+   .main-nav {
+    display: flex;
+    align-items: center;
+
+   }
+
+   .navbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+   }
+
+   .bar {
+    background-color: black;
+    width: 20px;
+    height: 2px;
+    margin: 4px;
+    border-radius: 20px;
+   }
+
+   .main-menu.active {
+    display: flex;
+   }
+
+
+   header {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+   }
+
+   .image-wrapper {
+    margin: 60px 0px 10px;
+   }
 }
