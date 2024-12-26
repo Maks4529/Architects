@@ -257,7 +257,7 @@ footer {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
    .main-menu {
     display: none;
     background-color: rgb(84, 80, 80);
@@ -299,7 +299,6 @@ footer {
 
    header {
     background-size: cover;
-    background-attachment: fixed;
     background-position: bottom;
    }
 
